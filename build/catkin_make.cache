@@ -1,0 +1,2 @@
+GP8_description/GP8_ROBOT
+-DCATKIN_DEVEL_PREFIX=/home/akashleena/manipulation_ws/devel -DCMAKE_INSTALL_PREFIX=/home/akashleena/manipulation_ws/install -G Unix Makefiles

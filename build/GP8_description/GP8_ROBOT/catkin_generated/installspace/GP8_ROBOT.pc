@@ -1,0 +1,8 @@
+prefix=/home/akashleena/manipulation_ws/install
+
+Name: GP8_ROBOT
+Description: Description of GP8_ROBOT
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

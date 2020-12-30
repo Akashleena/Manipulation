@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="GP8_ROBOT">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0652812104856196 0.000650845346842319 0.0571342236625736"
+        rpy="0 0 0" />
+      <mass
+        value="0.277513225515359" />
+      <inertia
+        ixx="0.000587449809903283"
+        ixy="-3.54881762833007E-06"
+        ixz="-1.72893878677204E-05"
+        iyy="0.000429447499445371"
+        iyz="-2.07386522800233E-06"
+        izz="0.000624100905267788" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GP8_ROBOT/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GP8_ROBOT/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_s_1">
+    <inertial>
+      <origin
+        xyz="-0.0233875345431962 -0.0409434383325452 -0.00705946708811589"
+        rpy="0 0 0" />
+      <mass
+        value="0.206853106260213" />
+      <inertia
+        ixx="0.000217188936891381"
+        ixy="3.0160003975487E-09"
+        ixz="-2.88010888808085E-05"
+        iyy="0.000264031369070913"
+        iyz="3.0900539052876E-09"
+        izz="0.000175182610718139" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GP8_ROBOT/meshes/link_s_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GP8_ROBOT/meshes/link_s_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_s_1"
+    type="revolute">
+    <origin
+      xyz="0.04 0 0.33"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_s_1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-2.9671"
+      upper="2.9671"
+      effort="30"
+      velocity="7.9413" />
+  </joint>
+  <link
+    name="link_l_2">
+    <inertial>
+      <origin
+        xyz="-0.0235569691025702 -0.000621628911227211 0.160353720137275"
+        rpy="0 0 0" />
+      <mass
+        value="1.60022314643033" />
+      <inertia
+        ixx="0.0224987901336236"
+        ixy="3.98888746967524E-05"
+        ixz="0.000229424164720137"
+        iyy="0.0201417423251241"
+        iyz="-0.000484912332583303"
+        izz="0.00729424551897379" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GP8_ROBOT/meshes/link_l_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GP8_ROBOT/meshes/link_l_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_l_2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_s_1" />
+    <child
+      link="link_l_2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.1345"
+      upper="2.5307"
+      effort="30"
+      velocity="6.7195" />
+  </joint>
+  <link
+    name="link_u_3">
+    <inertial>
+      <origin
+        xyz="-0.0249999863890236 -1.43346086513718E-08 0.0988436751455709"
+        rpy="0 0 0" />
+      <mass
+        value="438218.078226928" />
+      <inertia
+        ixx="22.8415065262053"
+        ixy="-3.95716194882173E-07"
+        ixz="-4.18816882557033E-05"
+        iyy="22.8420472669112"
+        iyz="-1.5347647244187E-05"
+        izz="45.4201725218812" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GP8_ROBOT/meshes/link_u_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GP8_ROBOT/meshes/link_u_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_u_3"
+    type="revolute">
+    <origin
+      xyz="0 0 0.345"
+      rpy="0 0 0" />
+    <parent
+      link="link_l_2" />
+    <child
+      link="link_u_3" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.2217"
+      upper="3.3161"
+      effort="30"
+      velocity="9.0757" />
+  </joint>
+  <link
+    name="link_r_4">
+    <inertial>
+      <origin
+        xyz="0.0120187109126609 0.0170997783888767 0.00119815087328623"
+        rpy="0 0 0" />
+      <mass
+        value="0.239407686790165" />
+      <inertia
+        ixx="0.000189622597940757"
+        ixy="1.68982131243527E-06"
+        ixz="3.37003634116589E-07"
+        iyy="0.00162057742744657"
+        iyz="-1.67712167217846E-09"
+        izz="0.00143630142138473" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GP8_ROBOT/meshes/link_r_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GP8_ROBOT/meshes/link_r_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_r_4"
+    type="revolute">
+    <origin
+      xyz="0.22065 0 0.04"
+      rpy="0 0 0" />
+    <parent
+      link="link_u_3" />
+    <child
+      link="link_r_4" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-3.3161"
+      upper="3.3161"
+      effort="17"
+      velocity="9.5993" />
+  </joint>
+  <link
+    name="link_b_5">
+    <inertial>
+      <origin
+        xyz="0.021260542485631 -0.00103435323218999 0.000309137980001428"
+        rpy="0 0 0" />
+      <mass
+        value="0.162817452778828" />
+      <inertia
+        ixx="0.00012595384625823"
+        ixy="-9.68889109090893E-07"
+        ixz="-1.7896935836253E-06"
+        iyy="0.000141925891641518"
+        iyz="1.48158827747186E-07"
+        izz="0.000103931385251892" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GP8_ROBOT/meshes/link_b_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GP8_ROBOT/meshes/link_b_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_b_5"
+    type="revolute">
+    <origin
+      xyz="0.11935 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_r_4" />
+    <child
+      link="link_b_5" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-2.3562"
+      upper="2.3562"
+      effort="17"
+      velocity="9.5993" />
+  </joint>
+  <link
+    name="link_t_6">
+    <inertial>
+      <origin
+        xyz="0.0103426123677494 0.000104248019014014 -1.42512719403243E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0171282215990933" />
+      <inertia
+        ixx="6.71678492527264E-06"
+        ixy="-7.75547932244119E-09"
+        ixz="-6.26617975452594E-13"
+        iyy="3.48368311870699E-06"
+        iyz="2.70549522554527E-11"
+        izz="3.5512345838154E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GP8_ROBOT/meshes/link_t_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GP8_ROBOT/meshes/link_t_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_t_6"
+    type="revolute">
+    <origin
+      xyz="0.065 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_b_5" />
+    <child
+      link="link_t_6" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-6.2832"
+      upper="6.2832"
+      effort="10"
+      velocity="17.453" />
+  </joint>
+</robot>
