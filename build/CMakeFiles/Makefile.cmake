@@ -10,13 +10,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
-  "GP8_description/GP8_ROBOT/catkin_generated/package.cmake"
   "catkin/catkin_generated/version/package.cmake"
   "catkin_generated/installspace/_setup_util.py"
   "catkin_generated/order_packages.cmake"
+  "yaskawa_gp8_description/robotic_arm_yaskawagp8/catkin_generated/package.cmake"
   "/home/akashleena/manipulation_ws/src/CMakeLists.txt"
-  "/home/akashleena/manipulation_ws/src/GP8_description/GP8_ROBOT/CMakeLists.txt"
-  "/home/akashleena/manipulation_ws/src/GP8_description/GP8_ROBOT/package.xml"
+  "/home/akashleena/manipulation_ws/src/yaskawa_gp8_description/robotic_arm_yaskawagp8/CMakeLists.txt"
+  "/home/akashleena/manipulation_ws/src/yaskawa_gp8_description/robotic_arm_yaskawagp8/package.xml"
   "/opt/ros/noetic/share/catkin/cmake/all.cmake"
   "/opt/ros/noetic/share/catkin/cmake/assert.cmake"
   "/opt/ros/noetic/share/catkin/cmake/atomic_configure_file.cmake"
@@ -162,7 +162,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "GP8_description/GP8_ROBOT/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "yaskawa_gp8_description/robotic_arm_yaskawagp8/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -176,5 +176,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "gtest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "gtest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   "gtest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "GP8_description/GP8_ROBOT/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake"
+  "yaskawa_gp8_description/robotic_arm_yaskawagp8/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake"
   )

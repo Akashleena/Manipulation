@@ -1,2 +1,2 @@
-GP8_description/GP8_ROBOT
+yaskawa_gp8_description/robotic_arm_yaskawagp8
 -DCATKIN_DEVEL_PREFIX=/home/akashleena/manipulation_ws/devel -DCMAKE_INSTALL_PREFIX=/home/akashleena/manipulation_ws/install -G Unix Makefiles

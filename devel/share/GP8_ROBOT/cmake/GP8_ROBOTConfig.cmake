@@ -67,7 +67,7 @@ set(GP8_ROBOT_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(GP8_ROBOT_SOURCE_PREFIX /home/akashleena/manipulation_ws/src/GP8_description/GP8_ROBOT)
+  set(GP8_ROBOT_SOURCE_PREFIX /home/akashleena/manipulation_ws/src/yaskawa_gp8_description/robotic_arm_yaskawaGP8)
   set(GP8_ROBOT_DEVEL_PREFIX /home/akashleena/manipulation_ws/devel)
   set(GP8_ROBOT_INSTALL_PREFIX "")
   set(GP8_ROBOT_PREFIX ${GP8_ROBOT_DEVEL_PREFIX})
@@ -110,7 +110,7 @@ if(NOT " " STREQUAL " ")
         message(FATAL_ERROR "Project 'GP8_ROBOT' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'GP8_ROBOT' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/akashleena/manipulation_ws/src/GP8_description/GP8_ROBOT/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'GP8_ROBOT' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/akashleena/manipulation_ws/src/yaskawa_gp8_description/robotic_arm_yaskawaGP8/${idir}'.  ${_report}")
     endif()
     _list_append_unique(GP8_ROBOT_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/akashleena/manipulation_ws/devel/lib;/home/akashleena/manipulation_ws/devel/lib;/home/akashleena/nodelets/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/akashleena/manipulation_ws/devel/lib;/home/akashleena/nodelets/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

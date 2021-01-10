@@ -5,4 +5,4 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
-subdirs("GP8_description/GP8_ROBOT")
+subdirs("yaskawa_gp8_description/robotic_arm_yaskawagp8")

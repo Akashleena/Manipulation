@@ -1,0 +1,8 @@
+prefix=/home/akashleena/manipulation_ws/devel
+
+Name: robotic_arm_yaskawaGP8
+Description: Description of robotic_arm_yaskawaGP8
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

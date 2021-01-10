@@ -310,10 +310,10 @@ EMPY_SCRIPT:STRING=/usr/lib/python3/dist-packages/em.py
 GMock_DIR:PATH=GMock_DIR-NOTFOUND
 
 //Value Computed by CMake
-GP8_ROBOT_BINARY_DIR:STATIC=/home/akashleena/manipulation_ws/build/GP8_description/GP8_ROBOT
+GP8_ROBOT_BINARY_DIR:STATIC=/home/akashleena/manipulation_ws/build/yaskawa_gp8_description/robotic_arm_yaskawaGP8
 
 //Value Computed by CMake
-GP8_ROBOT_SOURCE_DIR:STATIC=/home/akashleena/manipulation_ws/src/GP8_description/GP8_ROBOT
+GP8_ROBOT_SOURCE_DIR:STATIC=/home/akashleena/manipulation_ws/src/yaskawa_gp8_description/robotic_arm_yaskawaGP8
 
 //Path to a file.
 GTEST_INCLUDE_DIR:PATH=/usr/include
@@ -433,6 +433,18 @@ gtest_hide_internal_symbols:BOOL=OFF
 
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
+
+//Value Computed by CMake
+robotic_arm_yaskawaGP8_BINARY_DIR:STATIC=/home/akashleena/manipulation_ws/build/yaskawa_gp8_description/robotic_arm_yaskawaGP8
+
+//Value Computed by CMake
+robotic_arm_yaskawaGP8_SOURCE_DIR:STATIC=/home/akashleena/manipulation_ws/src/yaskawa_gp8_description/robotic_arm_yaskawaGP8
+
+//Value Computed by CMake
+robotic_arm_yaskawagp8_BINARY_DIR:STATIC=/home/akashleena/manipulation_ws/build/yaskawa_gp8_description/robotic_arm_yaskawagp8
+
+//Value Computed by CMake
+robotic_arm_yaskawagp8_SOURCE_DIR:STATIC=/home/akashleena/manipulation_ws/src/yaskawa_gp8_description/robotic_arm_yaskawagp8
 
 //The directory containing a CMake configuration file for roslaunch.
 roslaunch_DIR:PATH=/opt/ros/noetic/share/roslaunch/cmake
